@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RESGUARDO</title>
+    <link rel="stylesheet" href="style006.css">
+</head>
+<body>
+        <div class="header-hero">
+            <header>
+                <nav>
+                    <ul class="menu">
+                      <li><a href="index.html">INICIO</a></li>
+                      <li><a href="">SERVICIOS</a>
+                        <ul class="submenu">
+                          <li><a href="ruta.html">RUTA</a></li>
+                          <li><a href="mapa.html">MAPA</a></li>
+                          <li><a href="nosotros.html">NOSOTROS</a></li>
+                        </ul>
+                      </li>
+                      <li><a href="contacto.html">CONTACTO</a></li>
+                      <li><a href="registro.html">RESERVAR</a></li>
+                    </ul>
+                  </nav>
+            </header>
+            <section class="hero">
+                <h1>R&nbsp;E&nbsp;S&nbsp;G&nbsp;U&nbsp;A&nbsp;R&nbsp;D&nbsp;O&nbsp;&nbsp;&nbsp; 
+                I&nbsp;N&nbsp;D&nbsp;I&nbsp;G&nbsp;E&nbsp;N&nbsp;A&nbsp;&nbsp;&nbsp; 
+                D&nbsp;E &nbsp;&nbsp;&nbsp; N&nbsp;U&nbsp;S&nbsp;I&nbsp;D&nbsp;O</h1>
+                <br>
+                <br>
+                <a href="informacion.html" class="shop-now">MÁS INFORMACIÓN</a>
+                <br>
+                <br>
+            </section>
+        </div>
+        <main>
+            <section class="left-section">
+                <div class="image-container">
+                    <img src="imagen8.jpg" alt="Imagen izquierda">
+                </div>
+            </section>
+            <section class="right-section">
+                <div class="text-container">
+                    <p><h1>MAPA DE UBICACIÓN DE 
+                        <br>
+                        NUESTRA RUTA TURISTICA</h1></p>
+                    <br>
+                    <p>Adéntrate en el corazón de la selva antioqueña y descubre el resguardo indígena Nusido, en Musinga, Frontino. 
+                        Aquí, la comunidad Emberá te abre sus puertas 
+                        <br>para compartir su rica cultura y tradiciones ancestrales.</p>
+                    <br>
+                    <div class="social-icons">
+                        <a href="#" onclick="openGoogleMaps('https://www.google.com/maps/place/Torre+Eiffel,+Champ+de+Mars,+5+Av.+Anatole+France,+75007+Paris,+Francia/@48.8583701,2.2944813,17z/data=!3m1!4b1!4m6!3m5!1s0x47e670047bb58c71:0x6361c2c7a9f939b9!8m2!3d48.8583701!4d2.2944813!16zL20vMDJfdjA');">
+                            <img src="maps.png" alt="Google Maps">
+                        </a>
+                    </div>
+                    
+                    <script>
+                    function openGoogleMaps(url) {
+                        window.open(url, 'GoogleMaps', 'width=800,height=600');
+                    }
+                    </script>
+                    <p>Explora mas</p>
+                </div>
+            </section>
+        </main>
+
+        <div class="container02">
+            <section class="left02-section">
+                <div class="video02-container">  <video src="ruta022.mp4" autoplay loop muted playsinline></video>  </div>
+            </section>
+            <section class="right02-section">
+                <div class="text02-container">
+                    <p><h1>GUIA GEOGRAFICA</h1></p>
+                    <br>
+                    <p>Personalizamos una guia visual de como seria tu recorrido para llegar a nosotros.
+                        <br>
+                    <br>
+                    El punto de partida es Santa Fe de Antioquia 📍
+                    <br>
+                    y nuestro punto de llegada es Nusido nuestro Resguardo Indigena 🏁.</p>
+                    <br>
+                    <a href="contacto.html" class="sarota">CONTACTANOS</a>
+                
+                    <a href="informacion.html" class="sarota">MÁS INFORMACIÓN</a>
+                </div>
+                <br>
+            </section>
+            <br>
+        </div>
+
+    <div class="whatsapp-logo">
+        <a href="https://wa.me/3226152365" target="_blank">
+            <img src="WhatsApp.jpg" width="100" height="100" alt="WhatsApp" />
+        </a>
+    </div>
+  
+<!-- Icono de chat flotante con imagen -->
+<button id="chat-icon" class="floating-chat">
+  <img src="chatbot.png" alt="Chat" class="chat-image">
+</button>
+
+<!-- Chatbox -->
+<div id="chat-box">
+  <button id="close-chat">X</button>
+  <div id="chat-content"></div>
+</div>
+
+<style>
+    /* Estilos básicos para el chatbot */
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Botón de chat flotante con imagen */
+.floating-chat {
+    position: fixed;
+    bottom: 80px; /* Ajusta la altura desde el fondo */
+    right: 20px; /* Ajusta la distancia desde la derecha */
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+.chat-image {
+    width: 60px;  /* Ajusta el tamaño de la imagen */
+    height: 60px;
+    border-radius: 50%;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.floating-chat:hover .chat-image {
+    transform: scale(1.1); /* Efecto de aumento al pasar el mouse */
+}
+
+/* Estilos del chatbox */
+#chat-box {
+    display: none;
+    position: fixed;
+    bottom: 100px;
+    right: 20px;
+    width: 300px;
+    height: 400px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    overflow-y: auto;
+    padding: 10px;
+}
+
+#chat-content {
+    max-height: 90%;
+    overflow-y: auto;
+}
+
+/* Botón de cerrar pequeño */
+#close-chat {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 16px;
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+#close-chat:hover {
+    background-color: darkred;
+}
+</style>
+
+<script>
+document.getElementById("chat-icon").addEventListener("click", function() {
+    document.getElementById("chat-box").style.display = "block";
+});
+
+document.getElementById("close-chat").addEventListener("click", function() {
+    document.getElementById("chat-box").style.display = "none";
+});
+</script>
+
+<script src="chatbot.js"></script>
+
+    <footer>
+      <div class="footer-content">
+          <div class="footer-section about">
+              <h3>NUSIDO</h3>
+              <p>Conoce como es nuestro reguardo indigena, donde aprenderas y disfrutaras de nuestra cultura.</p>
+          </div>
+          <div class="footer-section contact">
+            <h3>CONTACTO</h3>
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=etnoturismoennusido@gmail.com&su=Consulta%20desde%20la%20web&body=Hola%2C%20quiero%20informaci%C3%B3n%20sobre..." target="_blank">Escríbenos en Gmail</a>
+            <p><a href="https://wa.me/3226152365?text=Hola,%20quiero%20información%20sobre...">Envianos un mensaje por WhatsApp</a></p>
+        </div>
+          <div class="footer-section links">
+              <h3>ACCESOS DIRECTOS</h3>
+              <ul>
+                  <li><a href="index.html">Inicio</a></li>
+                  <li><a href="ruta.html">Rutas</a></li>
+                  <li><a href="mapa.html">Mapa</a></li>
+                  <li><a href="contacto.html">Contáctanos</a></li>
+                  <li><a href="nosotros.html">Nosotros</a></li>
+              </ul>
+          </div>
+      </div>
+      <div class="footer-bottom">
+          <p>&copy; 2024 RESGUARDO INDIGENA NUSIDO. TODOS LOS DERECHOS RESERVADOS.</p>
+      </div>
+  </footer>
+
+</body>
+</html>

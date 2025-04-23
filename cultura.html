@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RESGUARDO</title>
+    <link rel="stylesheet" href="style003.css">
+</head>
+<body>
+    <div class="header-hero">
+        <header>
+            <div class="logo"> <img src="logo.png" width="90" height="70"></div>
+            <nav>
+                <ul class="menu">
+                  <li><a href="index.html">INICIO</a></li>
+                  <li><a href="">SERVICIOS</a>
+                    <ul class="submenu">
+                      <li><a href="ruta.html">RUTA</a></li>
+                      <li><a href="mapa.html">MAPA</a></li>
+                      <li><a href="nosotros.html">NOSOTROS</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="contacto.html">CONTACTO</a></li>
+                  <li><a href="registro.html">RESERVAR</a></li>
+                </ul>
+              </nav>
+        </header>
+        <section class="hero">
+            <h1>R&nbsp;E&nbsp;S&nbsp;G&nbsp;U&nbsp;A&nbsp;R&nbsp;D&nbsp;O&nbsp;&nbsp;&nbsp; 
+            I&nbsp;N&nbsp;D&nbsp;I&nbsp;G&nbsp;E&nbsp;N&nbsp;A&nbsp;&nbsp;&nbsp; 
+            D&nbsp;E &nbsp;&nbsp;&nbsp; N&nbsp;U&nbsp;S&nbsp;I&nbsp;D&nbsp;O</h1>
+            <br>
+            <br>
+            <a href="informacion.html" class="shop-now">MÁS INFORMACIÓN</a>
+            <br>
+            <br>
+        </section>
+    </div>
+
+    
+
+    <section class="slider-section">
+      <div class="slider-container">
+        <h1>C&nbsp;&nbsp;U&nbsp;&nbsp;L&nbsp;&nbsp;T&nbsp;&nbsp;U&nbsp;&nbsp;R&nbsp;&nbsp;A&nbsp;&nbsp;</h1>
+          <div class="slider">
+            
+              <div class="slide"><video src="vesti02.mp4" controls autoplay muted loop></video></div>
+              <div class="slide"><img src="vesti04.jpeg" alt="Vestimenta 1"></div>
+              <div class="slide"><video src="vesti01.mp4" controls></video></div>
+              <div class="slide"><img src="vesti05.jpeg" alt="Vestimenta 2"></div>
+              <div class="slide"><video src="vesti09.mp4" controls></video></div>
+              <div class="slide"><video src="vesti11.mp4" controls></video></div>
+          </div>
+          <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+          <button class="next" onclick="moveSlide(1)">&#10095;</button>
+<br>
+<br>
+          <i><h3>🌄"Los Emberá viven al ritmo del agua y el viento, con la selva como hogar <br>
+            y la montaña como testigo. Su piel es lienzo de la tierra, adornada con jagua <br>
+            y shakiras que narran historias antiguas.<br>
+            Caminan descalzos sobre raíces milenarias, recolectando el regalo de la selva: <br>
+            el maíz, la yuca y el pescado fresco, cocidos al fuego y<br> 
+            envueltos en hojas sagradas. En sus danzas resuena el latido del tambor, eco de espíritus que aún susurran entre los árboles.
+            Son memoria viva, custodios de un legado tejido en hilos de sangre, río, montaña y naturaleza."🌄</h3></i>
+      <br>
+      <br>
+      <br>
+
+</div>
+
+  </section>
+
+  <script> let slideIndex = 0;
+    const slides = document.querySelectorAll(".slide");
+    const slider = document.querySelector(".slider");
+    
+    function showSlides() {
+        slideIndex++;
+    
+        // Si se pasa del último slide, vuelve al primero
+        if (slideIndex >= slides.length) {
+            slideIndex = 0;
+        }
+    
+        // Mueve el slider al siguiente slide
+        slider.style.transform = `translateX(${-slideIndex * 100}%)`;
+    
+        // Si es un video, lo reproduce automáticamente
+        let currentSlide = slides[slideIndex];
+        let video = currentSlide.querySelector("video");
+        if (video) {
+            video.play();
+        }
+    }
+    
+    // Función para cambiar manualmente de slide
+    function moveSlide(n) {
+        slideIndex += n;
+    
+        if (slideIndex < 0) {
+            slideIndex = slides.length - 1;
+        } else if (slideIndex >= slides.length) {
+            slideIndex = 0;
+        }
+    
+        slider.style.transform = `translateX(${-slideIndex * 100}%)`;
+    
+        // Si es un video, lo reproduce automáticamente
+        let currentSlide = slides[slideIndex];
+        let video = currentSlide.querySelector("video");
+        if (video) {
+            video.play();
+        }
+    }
+    
+    // Cambia de slide automáticamente cada 5 segundos
+    setInterval(showSlides, 5000);
+    </script>
+
+    <div class="whatsapp-logo">
+        <a href="https://wa.me/3226152365" target="_blank">
+            <img src="WhatsApp.jpg" width="100" height="100" alt="WhatsApp" />
+        </a>
+    </div>
+
+    
+<!-- Icono de chat flotante con imagen -->
+<button id="chat-icon" class="floating-chat">
+    <img src="chatbot.png" alt="Chat" class="chat-image">
+  </button>
+  
+  <!-- Chatbox -->
+  <div id="chat-box">
+    <button id="close-chat">X</button>
+    <div id="chat-content"></div>
+  </div>
+  
+  <style>
+  /* Estilos básicos para el chatbot */
+  body {
+      font-family: Arial, sans-serif;
+  }
+  
+  /* Botón de chat flotante con imagen */
+  .floating-chat {
+      position: fixed;
+      bottom: 80px; /* Ajusta la altura desde el fondo */
+      right: 20px; /* Ajusta la distancia desde la derecha */
+      background-color: transparent;
+      border: none;
+      cursor: pointer;
+      padding: 0;
+  }
+  
+  .chat-image {
+      width: 60px;  /* Ajusta el tamaño de la imagen */
+      height: 60px;
+      border-radius: 50%;
+      box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .floating-chat:hover .chat-image {
+      transform: scale(1.1); /* Efecto de aumento al pasar el mouse */
+  }
+  
+  /* Estilos del chatbox */
+  #chat-box {
+      display: none;
+      position: fixed;
+      bottom: 100px;
+      right: 20px;
+      width: 300px;
+      height: 400px;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+      overflow-y: auto;
+      padding: 10px;
+  }
+  
+  #chat-content {
+      max-height: 90%;
+      overflow-y: auto;
+  }
+  
+  /* Botón de cerrar pequeño */
+  #close-chat {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      font-size: 16px;
+      background-color: red;
+      color: white;
+      border: none;
+      padding: 5px 10px;
+      border-radius: 50%;
+      cursor: pointer;
+  }
+  
+  #close-chat:hover {
+      background-color: darkred;
+  }
+  </style>
+  
+  <script>
+  document.getElementById("chat-icon").addEventListener("click", function() {
+      document.getElementById("chat-box").style.display = "block";
+  });
+  
+  document.getElementById("close-chat").addEventListener("click", function() {
+      document.getElementById("chat-box").style.display = "none";
+  });
+  </script>
+  
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section about">
+                <h3>NUSIDO</h3>
+                <p>Conoce como es nuestro reguardo indigena, donde aprenderas y disfrutaras de nuestra cultura.</p>
+            </div>
+            <div class="footer-section contact">
+                <h3>CONTACTO</h3>
+                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=etnoturismoennusido@gmail.com&su=Consulta%20desde%20la%20web&body=Hola%2C%20quiero%20informaci%C3%B3n%20sobre..." target="_blank">Escríbenos en Gmail</a>
+                <p><a href="https://wa.me/3226152365?text=Hola,%20quiero%20información%20sobre...">Envianos un mensaje por WhatsApp</a></p>
+            </div>
+            <div class="footer-section links">
+                <h3>ACCESOS DIRECTOS</h3>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="ruta.html">Rutas</a></li>
+                    <li><a href="mapa.html">Mapa</a></li>
+                    <li><a href="contacto.html">Contáctanos</a></li>
+                    <li><a href="nosotros.html">Nosotros</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 RESGUARDO INDIGENA NUSIDO. TODOS LOS DERECHOS RESERVADOS.</p>
+        </div>
+    </footer>
+
+    
+</body>
+</html>

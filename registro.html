@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registro</title>
+  <link rel="stylesheet" href="style010.css">
+</head>
+<body>
+  <div class="background"></div>
+
+  <div class="login-container">
+    <form class="login-form" method="POST" action="registro.php">
+      <h2>RESERVAR</h2>
+
+      <div class="input-group">
+        <input type="text" name="nombre_completo" placeholder="Nombre completo" required>
+      </div>
+      <div class="input-group">
+        <input type="email" name="correo" placeholder="Correo" required>
+      </div>
+      <div class="input-group">
+        <input type="number" name="edad" placeholder="Edad" required>
+      </div>
+      <div class="input-group">
+        <input type="text" name="lugar" placeholder="Lugar" required>
+      </div>
+      <div class="input-group">
+        <input type="text" name="direccion" placeholder="Dirección" required>
+      </div>
+
+      <button type="submit">ENVIAR</button>
+
+      <div class="register-link">
+        <p>Raíces vivas, un latido ancestral en cada paso.</p>
+        <a href="index.html">Volver a Inicio</a>
+      </div>
+    </form>
+  </div>
+</body>
+</html>

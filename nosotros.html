@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RESGUARDO</title>
+    <link rel="stylesheet" href="style009.css">
+</head>
+<body>
+    
+        <div class="header-hero">
+            <header>
+                <div class="logo"> <img src="logo.png" width="90" height="70"></div>
+                <nav>
+                    <ul class="menu">
+                      <li><a href="index.html">INICIO</a></li>
+                      <li><a href="">SERVICIOS</a>
+                        <ul class="submenu">
+                          <li><a href="ruta.html">RUTA</a></li>
+                          <li><a href="mapa.html">MAPA</a></li>
+                          <li><a href="nosotros.html">NOSOTROS</a></li>
+                        </ul>
+                      </li>
+                      <li><a href="contacto.html">CONTACTO</a></li>
+                      <li><a href="registro.html">RESERVAR</a></li>
+                    </ul>
+                  </nav>
+            </header>
+            <section class="hero">
+                <h1>R&nbsp;E&nbsp;S&nbsp;G&nbsp;U&nbsp;A&nbsp;R&nbsp;D&nbsp;O&nbsp;&nbsp;&nbsp; 
+                I&nbsp;N&nbsp;D&nbsp;I&nbsp;G&nbsp;E&nbsp;N&nbsp;A&nbsp;&nbsp;&nbsp; 
+                D&nbsp;E &nbsp;&nbsp;&nbsp; N&nbsp;U&nbsp;S&nbsp;I&nbsp;D&nbsp;O</h1>
+                <br>
+                <br>
+                <a href="informacion.html" class="shop-now">MÁS INFORMACIÓN</a>    
+                <br>
+                <br>
+            </section>
+        </div>
+
+
+        <section id="contact-links" class="contact-links">
+            <video autoplay loop muted>
+                <source src="naleza.mp4" type="video/mp4">
+                Tu navegador no soporta videos en HTML5.
+            </video>
+            <div class="container">
+                <div class="contact-links-intro">
+                    <h1>N&nbsp;O&nbsp;S&nbsp;O&nbsp;T&nbsp;R&nbsp;O&nbsp;S&nbsp;</h1>
+                    <br>
+                    <br>
+                    <p class="description">
+                        Somos un resguardo indígena con una historia ancestral que se ha transmitido de generación en generación.
+                        Nuestra comunidad está profundamente conectada con la naturaleza y vive en armonía con el entorno, 
+                        respetando cada río, montaña y bosque que nos rodea. Nuestra cultura es un reflejo de nuestras raíces, 
+                        tradiciones y saberes, que han sido forjados a lo largo del tiempo por nuestros ancestros.
+                        A través de nuestras costumbres, la música, la danza, la gastronomía y las historias de nuestros mayores, 
+                        buscamos preservar y compartir el legado de nuestra gente. 
+                        Invitamos a todos aquellos que deseen conocer más sobre nuestra forma de vida a acercarse,
+                        aprender y experimentar la riqueza cultural que nos define.
+                        Nuestro propósito es abrir las puertas de nuestro resguardo y crear puentes de entendimiento entre nuestra comunidad y el mundo, 
+                        fomentando el respeto, la unión y la valoración de nuestra identidad indígena.
+                    </p>
+                    <br>
+                    <br>
+                </div>
+            </div>
+        </section>
+        
+
+
+    <div class="whatsapp-logo">
+        <a href="https://wa.me/3226152365" target="_blank">
+            <img src="WhatsApp.jpg" width="100" height="100" alt="WhatsApp" />
+        </a>
+    </div>
+  
+<!-- Icono de chat flotante con imagen -->
+<button id="chat-icon" class="floating-chat">
+  <img src="chatbot.png" alt="Chat" class="chat-image">
+</button>
+
+<!-- Chatbox -->
+<div id="chat-box">
+  <button id="close-chat">X</button>
+  <div id="chat-content"></div>
+</div>
+
+<style>
+    /* Estilos básicos para el chatbot */
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Botón de chat flotante con imagen */
+.floating-chat {
+    position: fixed;
+    bottom: 80px; /* Ajusta la altura desde el fondo */
+    right: 20px; /* Ajusta la distancia desde la derecha */
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+.chat-image {
+    width: 60px;  /* Ajusta el tamaño de la imagen */
+    height: 60px;
+    border-radius: 50%;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.floating-chat:hover .chat-image {
+    transform: scale(1.1); /* Efecto de aumento al pasar el mouse */
+}
+
+/* Estilos del chatbox */
+#chat-box {
+    display: none;
+    position: fixed;
+    bottom: 100px;
+    right: 20px;
+    width: 300px;
+    height: 400px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    overflow-y: auto;
+    padding: 10px;
+}
+
+#chat-content {
+    max-height: 90%;
+    overflow-y: auto;
+}
+
+/* Botón de cerrar pequeño */
+#close-chat {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 16px;
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+#close-chat:hover {
+    background-color: darkred;
+}
+</style>
+
+<script>
+document.getElementById("chat-icon").addEventListener("click", function() {
+    document.getElementById("chat-box").style.display = "block";
+});
+
+document.getElementById("close-chat").addEventListener("click", function() {
+    document.getElementById("chat-box").style.display = "none";
+});
+</script>
+
+<script src="chatbot.js"></script>
+
+    <footer>
+      <div class="footer-content">
+          <div class="footer-section about">
+              <h3>NUSIDO</h3>
+              <p>Conoce como es nuestro reguardo indigena, donde aprenderas y disfrutaras de nuestra cultura.</p>
+          </div>
+          <div class="footer-section contact">
+            <h3>CONTACTO</h3>
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=etnoturismoennusido@gmail.com&su=Consulta%20desde%20la%20web&body=Hola%2C%20quiero%20informaci%C3%B3n%20sobre..." target="_blank">Escríbenos en Gmail</a>
+            <p><a href="https://wa.me/3226152365?text=Hola,%20quiero%20información%20sobre...">Envianos un mensaje por WhatsApp</a></p>
+        </div>
+          <div class="footer-section links">
+              <h3>ACCESOS DIRECTOS</h3>
+              <ul>
+                  <li><a href="index.html">Inicio</a></li>
+                  <li><a href="ruta.html">Rutas</a></li>
+                  <li><a href="mapa.html">Mapa</a></li>
+                  <li><a href="contacto.html">Contáctanos</a></li>
+                  <li><a href="nosotros.html">Nosotros</a></li>
+              </ul>
+          </div>
+      </div>
+      <div class="footer-bottom">
+          <p>&copy; 2024 RESGUARDO INDIGENA NUSIDO. TODOS LOS DERECHOS RESERVADOS.</p>
+      </div>
+  </footer>
+
+</body>
+</html>

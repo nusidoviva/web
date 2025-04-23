@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RESGUARDO</title>
+    <link rel="stylesheet" href="style001.css">
+</head>
+<body>
+    
+        <div class="header-hero">
+            <header>
+                <div class="logo"> <img src="logo.png" width="90" height="70"></div>
+                <nav>
+                    <ul class="menu">
+                      <li><a href="index.html">INICIO</a></li>
+                      <li><a href="">SERVICIOS</a>
+                        <ul class="submenu">
+                          <li><a href="ruta.html">RUTA</a></li>
+                          <li><a href="mapa.html">MAPA</a></li>
+                          <li><a href="nosotros.html">NOSOTROS</a></li>
+                          <li><a href="manualusuario.php">MANUAL DE USUARIO</a></li>
+                        </ul>
+                      </li>
+                      <li><a href="contacto.html">CONTACTO</a></li>
+                      <li><a href="registro.html">RESERVAR</a></li>
+                    </ul>
+                  </nav>
+            </header>
+            <section class="hero">
+                <h1>R&nbsp;E&nbsp;S&nbsp;G&nbsp;U&nbsp;A&nbsp;R&nbsp;D&nbsp;O&nbsp;&nbsp;&nbsp; 
+                I&nbsp;N&nbsp;D&nbsp;I&nbsp;G&nbsp;E&nbsp;N&nbsp;A&nbsp;&nbsp;&nbsp; 
+                D&nbsp;E &nbsp;&nbsp;&nbsp; N&nbsp;U&nbsp;S&nbsp;I&nbsp;D&nbsp;O</h1>
+                <br>
+                <br>
+                <a href="informacion.html" class="shop-now">MÁS INFORMACIÓN</a>    
+                <br>
+                <br>
+            </section>
+        </div>
+
+
+        <div class="background-container">
+            <video width="300" height="600" autoplay loop muted>
+              <source src="naleza2.mp4" type="video/mp4">
+            </video>
+
+            <div class="frase-superior">
+              <br>
+              <h2>A&nbsp;L&nbsp;O&nbsp;J&nbsp;A&nbsp;M&nbsp;I&nbsp;E&nbsp;N&nbsp;T&nbsp;O&nbsp;&nbsp;&nbsp;&nbsp;
+                E&nbsp;T&nbsp;N&nbsp;O&nbsp;T&nbsp;U&nbsp;R&nbsp;I&nbsp;S&nbsp;T&nbsp;I&nbsp;C&nbsp;O&nbsp;&nbsp;&nbsp;&nbsp;C&nbsp;O&nbsp;N&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <br>S&nbsp;E&nbsp;N&nbsp;T&nbsp;I&nbsp;D&nbsp;O&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;C&nbsp;O&nbsp;M&nbsp;U&nbsp;N&nbsp;I&nbsp;T&nbsp;A&nbsp;R&nbsp;I&nbsp;O</h2>
+                
+              </div>
+          
+             <section class="product">
+              <h2>V&nbsp;E&nbsp;S&nbsp;T&nbsp;I&nbsp;M&nbsp;E&nbsp;N&nbsp;T&nbsp;A</h2>
+              <br>
+              <br>
+              <br>
+              <img src="img11.jpg" width="800" height="800" alt="Maquillaje">
+              <br>
+              <br>
+              <br>
+              <i>COLORES DE LA TIERRA QUE CUENTAN HISTORIAS ANCESTRALES EN CADA TRAZO</i>
+              <br>
+              <a href="vestimenta.html" class="button-pikachu">Ver más</a>
+             </section>
+
+             <section class="product">
+              <h2>C&nbsp;U&nbsp;L&nbsp;T&nbsp;U&nbsp;R&nbsp;A</h2>
+              <img src="img1.jpg" width="100" height="100" alt="Crema Exclusiva de Calidad Premium">
+              <br>
+              <br>
+              <i>EN CADA CANTO Y DANZA, NOSOTROS CELEBRAMOS LA ARMONIA</i>
+              <br>
+              <a href="cultura.html" class="button-pikachu">Ver más</a>
+             </section>
+
+             <section class="product">
+              <h2>M&nbsp;A&nbsp;Q&nbsp;U&nbsp;I&nbsp;L&nbsp;L&nbsp;A&nbsp;J&nbsp;E</h2>
+              <br>
+              <img src="img6.jpg" width="800" height="800" alt="Oferta Especial">
+              <br>
+              <br>
+              <i>HILOS DE TRADICION QUE TEJEN LA IDENTIDAD Y LA CONEXION CON LA TIERRA</i>
+              <br>
+              <a href="maquillaje.html" class="button-pikachu">Ver más</a>
+             </section>
+
+              <br>
+              <br>
+              <br>
+            </div>
+
+    
+<div id="chatbot">
+      
+  <button onclick="toggleChat()" class="chat-toggle-btn">
+    <span class="chat-icon">💬</span>
+    <span class="chat-label">Chat Emberá</span>
+    <span class="badge">Nuevo</span>
+  </button>
+
+  <div id="chatbot-window">
+    <div class="chat-header">
+      <div class="header-content">
+        <div class="header-text">
+          <h3>Guía Emberá de Nusidó</h3>
+          <p class="status">En línea</p>
+        </div>
+      </div>
+      <button class="close-btn" onclick="toggleChat()">&times;</button>
+    </div>
+
+    <div id="chat-log">
+      <!-- Mensajes se insertan aquí -->
+      
+      <!-- Opciones fijas -->
+      <div id="fixed-options">
+        <div class="options-title">Preguntas frecuentes:</div>
+        <div class="options-grid">
+          <button onclick="sendSuggested('¿Dónde queda Nusidó?')" class="option-btn">
+            <span class="icon">📍</span> Ubicación
+          </button>
+          <button onclick="sendSuggested('¿Qué incluye el tour?')" class="option-btn">
+            <span class="icon">🛶</span> Tour
+          </button>
+          <button onclick="sendSuggested('¿Qué comidas típicas hay?')" class="option-btn">
+            <span class="icon">🍌</span> Comidas
+          </button>
+          <button onclick="window.location.href='reserva.html'" class="option-btn highlight">
+            <span class="icon">✨</span> Reservar
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div id="chatbot-controls">
+      <div class="input-container">
+        <input type="text" id="user-input" placeholder="Escribe tu mensaje..." aria-label="Escribe tu mensaje">
+        <button id="send-btn" onclick="sendMessage()" aria-label="Enviar mensaje">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="22" y1="2" x2="11" y2="13"></line>
+            <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+          </svg>
+        </button>
+      </div>
+      <div class="secondary-controls">
+        <button id="speak-btn" onclick="toggleSpeak()" class="icon-btn" aria-label="Activar voz">
+          <span id="speak-icon">🔇</span> Voz
+        </button>
+        <button onclick="showHelp()" class="icon-btn" aria-label="Ayuda">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="10"></circle>
+            <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path>
+            <line x1="12" y1="17" x2="12" y2="17"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<link rel="stylesheet" href="chatbot.css">
+<script src="chatbot.js" defer></script>
+
+
+
+    <footer>
+      <div class="footer-content">
+          <div class="footer-section about">
+              <h3>NUSIDO</h3>
+              <p>Conoce como es nuestro reguardo indigena, donde aprenderas y disfrutaras de nuestra cultura.</p>
+          </div>
+          <div class="footer-section contact">
+            <h3>CONTACTO</h3>
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=etnoturismoennusido@gmail.com&su=Consulta%20desde%20la%20web&body=Hola%2C%20quiero%20informaci%C3%B3n%20sobre..." target="_blank">Escríbenos en Gmail</a>
+            <p><a href="https://wa.me/3226152365?text=Hola,%20quiero%20información%20sobre...">Envianos un mensaje por WhatsApp</a></p>
+        </div>
+          <div class="footer-section links">
+              <h3>ACCESOS DIRECTOS</h3>
+              <ul>
+                  <li><a href="index.html">Inicio</a></li>
+                  <li><a href="ruta.html">Rutas</a></li>
+                  <li><a href="mapa.html">Mapa</a></li>
+                  <li><a href="contacto.html">Contáctanos</a></li>
+                  <li><a href="nosotros.html">Nosotros</a></li>
+              </ul>
+          </div>
+      </div>
+      <div class="footer-bottom">
+          <p>&copy; 2024 RESGUARDO INDIGENA NUSIDO. TODOS LOS DERECHOS RESERVADOS.</p>
+      </div>
+  </footer>
+
+</body>
+</html>
