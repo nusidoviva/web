@@ -1,0 +1,461 @@
+/* Estilos generales del cuerpo */
+body {
+    font-family: 'Playfair Display', serif;
+    margin: 0;
+    padding: 0;
+    background-color: transparent; /* Fondo transparente */
+}
+
+/* Contenedor del encabezado y la imagen de fondo */
+.header-hero {
+    background-image: url('img11.jpg');
+    background-size: cover;
+    background-position: center;
+    color: rgb(255, 255, 255);
+    position: relative;
+    z-index: 1;
+    padding: 60px 0;
+}
+
+/* Encabezado principal */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Logo */
+.logo {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+/* Navegación principal */
+nav {
+    background-color: transparent; /* Fondo transparente */
+    padding: 20px;
+}
+
+.menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.menu > li {
+    position: relative;
+}
+
+.menu > li > a {
+    color: rgb(255, 255, 255); /* Color de texto blanco */
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+    font-size: 18px;
+}
+
+/* Estilo para el submenú */
+.submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: rgba(0, 0, 0, 0.8); /* Fondo oscuro para el submenú */
+}
+
+.submenu > li > a {
+    color: rgb(255, 255, 255); /* Color de texto blanco */
+    padding: 10px 20px; /* Añadido padding horizontal */
+    display: block;
+    font-size: 16px;
+    text-decoration: none; /* Asegúrate de no tener subrayado */
+}
+
+/* Efecto hover para cambiar color de texto */
+.menu > li > a:hover, .submenu > li > a:hover {
+    color: #e5be01; /* Cambio de color al pasar el ratón (amarillo) */
+}
+
+/* Mostrar el submenú al pasar el ratón */
+.menu > li:hover .submenu {
+    display: block;
+}
+
+/* Sección del héroe (título principal) */
+.hero {
+    text-align: center;
+    padding: 80px 20px;
+    color: #524f4f; /* Color de texto grisáceo */
+}
+
+.hero h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+    color: #e5be01; /* Color del título principal (amarillo) */
+}
+
+.hero p {
+    font-size: 1.1em;
+    margin-bottom: 30px;
+}
+
+.shop-now, .button-pikachu {
+    padding: 15px 30px;
+    border: none;
+    border-radius: 25px;
+    font-size: 1em;
+    cursor: pointer;
+    text-decoration: none; /* Asegúrate de no tener subrayado */
+    display: inline-block; /* Para que se comporten como bloques en línea */
+}
+
+.shop-now {
+    background-color: #e5be01; /* Amarillo */
+    color: #ffffff; /* Blanco */
+}
+
+.button-pikachu {
+    background-color: #b99f1d; /* Amarillo más oscuro/dorado */
+    color: #000000; /* Negro */
+}
+
+/* Contenedor principal del contenido */
+.background-container {
+    position: relative;
+    display: flex;
+    justify-content: center; /* Centra las secciones horizontalmente */
+    align-items: flex-start; /* Alinea las secciones al inicio verticalmente */
+    padding: 20px;
+    min-height: auto; /* Ajustado a auto para que se expanda según el contenido */
+    flex-direction: row; /* Cambiado a fila para alineación horizontal */
+    flex-wrap: wrap; /* Permite que las secciones se envuelvan */
+}
+
+.background-container video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.frase-superior {
+    text-align: center;
+    padding: 20px;
+    color: #fad82f; /* Amarillo claro */
+    font-size: 1.2em;
+    width: 100%;
+}
+
+/* Contenedor del producto (manual de usuario) */
+.product {
+    background-color: rgba(255, 255, 255, 0.8); /* Fondo blanco semitransparente */
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    padding: 30px;
+    margin: 20px;
+    text-align: left; /* Alineación del texto a la izquierda para mejor lectura */
+    width: 90%; /* Ocupa un ancho mayor */
+    max-width: 900px; /* Ancho máximo */
+    height: auto;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Alineación de elementos a la izquierda */
+}
+
+.product img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.product h2 {
+    font-size: 2em; /* Tamaño de fuente más grande */
+    margin-bottom: 15px;
+    color: #000000;
+}
+
+.product h3 {
+    font-size: 1.5em; /* Tamaño de fuente para subsecciones */
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: #000000;
+}
+
+.product p {
+    margin: 10px 0;
+    color: #000000;
+    line-height: 1.6; /* Mejor espaciado entre líneas */
+    text-align: left; /* Asegura la alineación a la izquierda */
+}
+
+.product ul, .product ol {
+    padding-left: 20px;
+    margin-bottom: 10px;
+}
+
+.product li {
+    margin-bottom: 5px;
+    color: #000000;
+    line-height: 1.6;
+}
+
+.product strong {
+    font-weight: bold;
+}
+
+/* Buscador dentro del producto */
+.product > input#buscador { /* Especificidad */
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 80px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 16px;
+    color: #333;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#buscador {
+    flex-grow: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px 0 0 5px;
+    font-size: 16px;
+    color: #333;
+}
+
+#buscar-boton {
+    background-color: #e5be01; /* Amarillo */
+    color: #ffffff; /* Blanco */
+    border: none;
+    padding: 50px 15px;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#buscar-boton:hover {
+    background-color: #b99f1d; /* Amarillo más oscuro */
+}
+
+.product > input#buscador:focus {
+    outline: none;
+    border-color: #e5be01; /* Amarillo al enfocar */
+    box-shadow: 0 0 5px rgba(229, 190, 1, 0.5); /* Sombra amarilla al enfocar */
+}
+
+.whatsapp-logo { /* Posición fija del logo de WhatsApp */
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 999;
+}
+
+.whatsapp-logo img {
+    width: 70px;
+    height: 70px;
+}
+
+/* Contenedor del índice */
+#indice {
+    background-color: rgba(255, 255, 255, 0.8); /* Fondo blanco semitransparente */
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    padding: 20px;
+    margin: 20px auto;
+    text-align: left;
+    width: 90%;
+    max-width: 900px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#indice h2 {
+    font-size: 1.8em;
+    margin-bottom: 15px;
+    color: #000000;
+}
+
+#indice ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#indice ul li {
+    margin-bottom: 10px;
+}
+
+#indice ul li a {
+    color: #007bff; /* Azul para los enlaces del índice */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+#indice ul li a:hover {
+    color: #e5be01; /* Amarillo al pasar el ratón */
+}
+
+/* Contenido del manual (oculto por defecto) */
+.contenido {
+    background-color: rgba(255, 255, 255, 0.8); /* Fondo blanco semitransparente */
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    padding: 30px;
+    margin: 20px auto;
+    text-align: left;
+    width: 90%;
+    max-width: 900px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: none; /* Oculto por defecto */
+}
+
+.contenido h2 {
+    font-size: 2em;
+    margin-top: 0;
+    margin-bottom: 15px;
+    color: #000000;
+}
+
+.contenido p {
+    line-height: 1.6;
+    color: #000000;
+}
+
+/* Pie de página */
+footer {
+    background-color: #a86342; /* Marrón */
+    padding: 40px 0;
+    color: #000000;
+    font-size: 14px;
+    text-align: center; /* Centrar el texto del pie de página */
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap; /* Permitir que las secciones se envuelvan */
+    padding: 20px; /* Añadido padding al contenedor */
+    text-align: left; /* Alinear el texto de las secciones a la izquierda */
+}
+
+.footer-section {
+    width: calc(33.33% - 40px); /* Ancho de las secciones con margen */
+    margin: 20px;
+}
+
+.footer-section h3 {
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+.footer-section p, .footer-section ul {
+    line-height: 1.6;
+    color: #000000;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+    color: #000000;
+    text-decoration: none;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid #ddd;
+    max-width: 1200px;
+    margin: 0 auto;
+    color: #000000;
+    font-size: 0.9em; /* Tamaño de fuente más pequeño */
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    nav {
+        padding: 10px;
+    }
+
+    .menu {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu > li {
+        margin-bottom: 10px;
+    }
+
+    .submenu {
+        position: static;
+        background-color: rgba(0, 0, 0, 0.8);
+        width: 100%;
+        text-align: center;
+    }
+
+    .submenu > li > a {
+        padding: 10px;
+    }
+
+    .hero {
+        padding: 60px 20px;
+    }
+
+    .hero h1 {
+        font-size: 2.5em;
+    }
+
+    .background-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .product, #indice, .contenido {
+        width: 95%;
+        margin: 10px auto;
+        padding: 20px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-section {
+        width: 90%;
+        margin-bottom: 30px;
+    }
+}

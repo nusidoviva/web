@@ -1,0 +1,336 @@
+body {
+    font-family: 'Playfair Display', serif;
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+  }
+  
+  .header-hero {
+    background-image: url('img11.jpg');
+    background-size: cover;
+    background-position: center;
+    color: rgb(0, 0, 0);
+    position: relative;
+    z-index: 1;
+    padding: 60px 0;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .logo {
+    font-size: 1.5em;
+    font-weight: bold;
+  }
+  nav {
+    background-color: transparent;  /* Fondo transparente */
+    padding: 20px;
+  }
+  
+  .menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  .menu > li {
+    position: relative;
+  }
+  
+  .menu > li > a {
+    color: rgb(255, 255, 255);  /* Color de texto negro */
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+    font-size: 18px;
+  }
+  
+  /* Estilo para el submenú */
+  .submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .submenu > li > a {
+    color: rgb(255, 255, 255);  /* Color de texto negro */
+    padding: 10px;
+    display: block;
+    font-size: 16px;
+  }
+  
+  /* Efecto hover para cambiar color de texto */
+  .menu > li > a:hover, .submenu > li > a:hover {
+    color: #e5be01;  /* Cambio de color al pasar el ratón */
+  }
+  
+  /* Mostrar el submenú al pasar el ratón */
+  .menu > li:hover .submenu {
+    display: block;
+  }
+
+  .user-actions a {
+    font-size: 24px; /* Ajusta el valor según el tamaño deseado */
+    color: #ffffff;;
+  }
+
+  .hero {
+    text-align: center;
+    padding: 80px 20px;
+    color: rgb(0, 0, 0);
+  }
+  
+  .hero h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+    color: #e5be01;
+  }
+  
+  .hero p {
+    font-size: 1.1em;
+    margin-bottom: 30px;
+  }
+  .shop-now {
+    background-color: #e5be01;
+    color: #ffffff;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 25px;
+    font-size: 1em;
+    cursor: pointer;
+  }
+
+
+  .button-pikachu { /* Corrección: Añadido el punto al inicio de la clase */
+    background-color: #b99f1d;
+    color: #000000;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 25px;
+    font-size: 1em;
+    cursor: pointer;
+  }
+
+
+  main {
+    display: flex;
+    flex-grow: 1;
+    padding: 2rem;
+    background-color: #c47d5d;
+}
+
+.left-section {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #c47d5d;
+}
+
+.image-container {
+    width: 500px;
+    height: 500px;
+    overflow: hidden;
+    
+}
+
+.image-container img {
+    width: 110%;
+    height: 110%;
+    object-fit: cover;
+    
+}
+
+.right-section {
+  font-family: 'Playfair Display', serif;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.text-container {
+    text-align: center;
+    color: #000000;
+}
+
+.social-icons, .tech-icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.social-icons img, .tech-icons img {
+    width: 80px;
+    height: 80px;
+    margin: 0 0.5rem;
+    transition: transform 0.3s ease;
+}
+
+.social-icons img:hover, .tech-icons img:hover {
+    transform: scale(1.1);
+}
+
+/* Estilos adicionales para mejorar la apariencia */
+.text-container p {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+/*segunda seccion.......................................................................... */
+
+.container02 { /* Agregamos un contenedor padre para aplicar flex */
+  display: flex;
+  flex-direction: row-reverse; /* Invierte el orden de las secciones */
+  background-color: #c47d5d;
+}
+
+.left02-section {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #c47d5d;
+}
+
+.video02-container {  /* Cambiamos el nombre de la clase */
+  width: 500px;
+  height: 500px;
+  overflow: hidden;
+}
+
+.video02-container video {  /* Estilos para el elemento video */
+  width: 110%;
+  height: 110%;
+  object-fit: cover;
+}
+
+.right02-section {
+  font-family: 'Playfair Display', serif;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #c47d5d;
+
+}
+
+.text02-container {
+  text-align: center;
+  color: #000000;
+}
+
+.social02-icons, .tech-icons {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+  color: #c47d5d;
+}
+
+.social02-icons img, .tech-icons img {
+  width: 80px;
+  height: 80px;
+  margin: 0 0.5rem;
+  transition: transform 0.3s ease;
+  color: #c47d5d;
+}
+
+.social02-icons img:hover, .tech-icons img:hover {
+  transform: scale(1.1);
+}
+
+/* Estilos adicionales para mejorar la apariencia */
+.text02-container p {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+  
+  
+}
+
+.sarota {
+  background-color: #e5be01;
+  color: #ffffff;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 25px;
+  font-size: 1em;
+  cursor: pointer;
+  display: block; /* Asegura que el botón sea un bloque */
+  margin: 20px auto; /* Centra el botón horizontalmente */
+  text-align: center; /* Centra el texto dentro del botón (opcional) */
+}
+
+/*whatsApp............................................................................*/
+
+.whatsapp-logo { /* Corrección: Agregado el punto al inicio de la clase */
+  position: fixed;
+  bottom: 10px;
+  right: 20px;
+  z-index: 999;
+}
+
+.whatsapp-logo img {
+  width: 70px;
+  height: 70px;
+}
+
+footer {
+    background-color: #a86342;
+    padding: 40px 0;
+    color: #000000;
+    font-size: 14px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-section {
+    width: 30%;
+}
+
+.footer-section h3 {
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+.footer-section p, .footer-section ul {
+    line-height: 1.6;
+    color: #000000;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+    color: #000000;
+    text-decoration: none;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid #ddd;
+    max-width: 1200px;
+    margin: 0 auto;
+    color: #000000;
+}
