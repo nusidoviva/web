@@ -1,0 +1,246 @@
+body {
+    font-family: 'Playfair Display', serif;
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+  }
+  
+  .header-hero {
+    background-image: url('img11.jpg');
+    background-size: cover;
+    background-position: center;
+    color: rgb(255, 255, 255);
+    position: relative;
+    z-index: 1;
+    padding: 60px 0;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .logo {
+    font-size: 1.5em;
+    font-weight: bold;
+  }
+  nav {
+    background-color: transparent;  /* Fondo transparente */
+    padding: 20px;
+  }
+  
+  .menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  .menu > li {
+    position: relative;
+  }
+  
+  .menu > li > a {
+    color: rgb(255, 255, 255);  /* Color de texto negro */
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+    font-size: 18px;
+  }
+  
+  /* Estilo para el submenú */
+  .submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .submenu > li > a {
+    color: rgb(255, 255, 255);  /* Color de texto negro */
+    padding: 10px;
+    display: block;
+    font-size: 16px;
+  }
+  
+  /* Efecto hover para cambiar color de texto */
+  .menu > li > a:hover, .submenu > li > a:hover {
+    color: #e5be01;  /* Cambio de color al pasar el ratón */
+  }
+  
+  /* Mostrar el submenú al pasar el ratón */
+  .menu > li:hover .submenu {
+    display: block;
+  }
+  .hero {
+    text-align: center;
+    padding: 80px 20px;
+    color: #524f4f;
+  }
+  
+  .hero h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+    color: #e5be01;
+  }
+  
+  .hero p {
+    font-size: 1.1em;
+    margin-bottom: 30px;
+  }
+  
+  .shop-now {
+    background-color: #e5be01;
+    color: #ffffff;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 25px;
+    font-size: 1em;
+    cursor: pointer;
+  }
+
+  .button-pikachu { /* Corrección: Añadido el punto al inicio de la clase */
+    background-color: #b99f1d;
+    color: #000000;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 25px;
+    font-size: 1em;
+    cursor: pointer;
+  }
+
+  .background-container {
+    position: relative;
+    display: flex;
+    justify-content: center; /* Centra las secciones horizontalmente */
+    align-items: flex-start; /* Alinea las secciones al inicio verticalmente */
+    padding: 20px;
+    min-height: 100vh;
+    flex-direction: row; /* Cambiado a fila para alineación horizontal */
+    flex-wrap: wrap; /* Permite que las secciones se envuelvan a la siguiente línea si no caben */
+  }
+  
+  .background-container video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+  }
+  
+  .frase-superior {
+    text-align: center;
+    padding: 20px;
+    color: #fad82f;
+    font-size: 1.2em;
+    width: 100%;
+  }
+  
+  .product {
+    background-color: rgba(255, 255, 255, 0.514);
+    border: 1px solid rgba(255, 255, 255, 0.514);
+    padding: 30px;
+    margin: 20px;
+    text-align: center;
+    width: 280px;
+    height: auto;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .product img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+  }
+  
+  .product h2 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+    color: #000000;
+  }
+  
+  .product p {
+    margin: 10px 0;
+    color: #000000;
+    text-align: center;
+  }
+  
+  .product .price {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #25b893;
+  }
+  .whatsapp-logo { /* Corrección: Agregado el punto al inicio de la clase */
+    position: fixed;
+    bottom: 10px;
+    right: 20px;
+    z-index: 999;
+}
+
+.whatsapp-logo img {
+    width: 70px;
+    height: 70px;
+}
+
+footer {
+    background-color: #a86342;
+    padding: 40px 0;
+    color: #000000;
+    font-size: 14px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-section {
+    width: 30%;
+}
+
+.footer-section h3 {
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+.footer-section p, .footer-section ul {
+    line-height: 1.6;
+    color: #000000;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+    color: #000000;
+    text-decoration: none;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid #ddd;
+    max-width: 1200px;
+    margin: 0 auto;
+    color: #000000;
+}

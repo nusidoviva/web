@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RESGUARDO</title>
+    <link rel="stylesheet" href="style002.css">
+</head>
+<body>
+
+    <div class="header-hero">
+        <header>
+            <div class="logo"> <img src="logo.png" width="90" height="70"></div>
+            <nav>
+                <ul class="menu">
+                  <li><a href="index.html">INICIO</a></li>
+                  <li><a href="">SERVICIOS</a>
+                    <ul class="submenu">
+                      <li><a href="ruta.html">RUTA</a></li>
+                      <li><a href="mapa.html">MAPA</a></li>
+                      <li><a href="nosotros.html">NOSOTROS</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="contacto.html">CONTACTO</a></li>
+                  <li><a href="registro.html">RESERVAR</a></li>
+                </ul>
+              </nav>
+        </header>
+        <section class="hero">
+            <h1>R&nbsp;E&nbsp;S&nbsp;G&nbsp;U&nbsp;A&nbsp;R&nbsp;D&nbsp;O&nbsp;&nbsp;&nbsp;
+            I&nbsp;N&nbsp;D&nbsp;I&nbsp;G&nbsp;E&nbsp;N&nbsp;A&nbsp;&nbsp;&nbsp;
+            D&nbsp;E &nbsp;&nbsp;&nbsp; N&nbsp;U&nbsp;S&nbsp;I&nbsp;D&nbsp;O</h1>
+            <br>
+            <br>
+            <a href="informacion.html" class="shop-now">MÁS INFORMACIÓN</a> 
+            <br>
+            <br>
+        </section>
+    </div>
+
+
+    <section class="quienes-somos-section">
+      <div class="columna-imagen">
+          <img src="resguardo.jpg" alt="Oficina de Alan & Partners">
+      </div>
+      <div class="columna-texto">
+          <h2>C&nbsp;O&nbsp;N&nbsp;O&nbsp;C&nbsp;E&nbsp;&nbsp;&nbsp;C&nbsp;O&nbsp;M&nbsp;O&nbsp;&nbsp;&nbsp;
+            E&nbsp;S&nbsp;&nbsp;&nbsp;U&nbsp;N&nbsp;&nbsp;&nbsp;
+            R&nbsp;E&nbsp;S&nbsp;G&nbsp;U&nbsp;A&nbsp;R&nbsp;D&nbsp;O&nbsp;&nbsp;&nbsp;
+            I&nbsp;N&nbsp;D&nbsp;I&nbsp;G&nbsp;E&nbsp;N&nbsp;A&nbsp;&nbsp;&nbsp;</h2>
+          <br>
+          <br>
+          <p>Hay un  lugar  encantador  enmarcado en bellos paisajes de naturaleza,</p>
+          <p>Donde viven   indígenas de la cultura emberá,</p>
+          <p>Que desean  que sus  vivencias sean escuchadas y vividas por los turistas</p>
+          <p>Y visitantes donde nos dejar grandes enseñanzas.</p>
+          <br>
+          <br>
+          <p>D&nbsp;I&nbsp;S&nbsp;F&nbsp;R&nbsp;U&nbsp;T&nbsp;A&nbsp;R&nbsp;A&nbsp;S&nbsp;&nbsp;&nbsp;
+          D&nbsp;E&nbsp;&nbsp;&nbsp;S&nbsp;U&nbsp;&nbsp;&nbsp;C&nbsp;U&nbsp;L&nbsp;T&nbsp;U&nbsp;R&nbsp;A.</p>
+          <br>
+          <a href="informacion.html" class="sarota">PRECIO</a> 
+      </div>
+    </section>
+
+
+    <section class="close-section">
+      <div class="columnados-imagen">
+          <img src="desarollo.jpg" >
+      </div>
+      <div class="columna2-texto">
+          <h2>R&nbsp;E&nbsp;C&nbsp;O&nbsp;R&nbsp;R&nbsp;I&nbsp;D&nbsp;O</h2>
+          <h4>EL HORARIO ES DE&nbsp; 9 a.m.&nbsp;&nbsp; A &nbsp; 2 p.m.</h4>
+          <br>
+          <br>
+          <div class="contenedor-columnas">
+            <div class="columna columna-texto">
+              <p>9 a.m.</p>
+              <br>
+              <br>
+              <br>
+              <p>9:30 a.m.</p>
+              <br>
+              <br>
+              <p>11:30 a.m.</p>
+              <br>
+              <br>
+              <p>12 p.m. </p>
+              <br>
+              <br>
+              <p>12:30 p.m. </p>
+              <br>
+              <br>
+              <p>1:.00 p.m. </p>
+              <br>
+              <br>
+              <p>1:.30 p.m. </p>
+            </div>
+            <div class="columna columna-texto">
+              <p>Punto de encuentro: en la caseta comunal bienvenida y bebida tipica</p>
+              <br>
+              <p>Salida al chorrón — senderismo y vistamiento de flora y fauna.</p>
+              <br>
+              <p>Taller de artesanía tejiendo la naturaleza – chaquiras</p>
+              <br>
+              <p>Taller de pintura facial – la belleza a través de la pintura y su significado  </p>
+              <br>
+              <p>Almuerzo  ancestral</p>
+              <br>
+              <p>Taller de danzas tradicionales – el ritmo y la armonía de los sonidos. </p>
+              <br>
+              <p>Taller de blusa embera – el significado también se veste.</p>
+            </div>
+          </div>
+          <a href="informacion.html" class="sarota">PRECIO</a> 
+      </div>
+      
+  </section>
+
+    
+<!-- Icono de chat flotante con imagen -->
+<button id="chat-icon" class="floating-chat">
+    <img src="chatbot.png" alt="Chat" class="chat-image">
+  </button>
+  
+  <!-- Chatbox -->
+  <div id="chat-box">
+    <button id="close-chat">X</button>
+    <div id="chat-content"></div>
+  </div>
+  
+  <style>
+  /* Estilos básicos para el chatbot */
+  body {
+      font-family: Arial, sans-serif;
+  }
+  
+  /* Botón de chat flotante con imagen */
+  .floating-chat {
+      position: fixed;
+      bottom: 80px; /* Ajusta la altura desde el fondo */
+      right: 20px; /* Ajusta la distancia desde la derecha */
+      background-color: transparent;
+      border: none;
+      cursor: pointer;
+      padding: 0;
+  }
+  
+  .chat-image {
+      width: 60px;  /* Ajusta el tamaño de la imagen */
+      height: 60px;
+      border-radius: 50%;
+      box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .floating-chat:hover .chat-image {
+      transform: scale(1.1); /* Efecto de aumento al pasar el mouse */
+  }
+  
+  /* Estilos del chatbox */
+  #chat-box {
+      display: none;
+      position: fixed;
+      bottom: 100px;
+      right: 20px;
+      width: 300px;
+      height: 400px;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+      overflow-y: auto;
+      padding: 10px;
+  }
+  
+  #chat-content {
+      max-height: 90%;
+      overflow-y: auto;
+  }
+  
+  /* Botón de cerrar pequeño */
+  #close-chat {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      font-size: 16px;
+      background-color: red;
+      color: white;
+      border: none;
+      padding: 5px 10px;
+      border-radius: 50%;
+      cursor: pointer;
+  }
+  
+  #close-chat:hover {
+      background-color: darkred;
+  }
+  </style>
+  
+  <script>
+  document.getElementById("chat-icon").addEventListener("click", function() {
+      document.getElementById("chat-box").style.display = "block";
+  });
+  
+  document.getElementById("close-chat").addEventListener("click", function() {
+      document.getElementById("chat-box").style.display = "none";
+  });
+  </script>
+  
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section about">
+                <h3>NUSIDO</h3>
+                <p>Conoce como es nuestro reguardo indigena, donde aprenderas y disfrutaras de nuestra cultura.</p>
+            </div>
+            <div class="footer-section contact">
+                <h3>CONTACTO</h3>
+                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=etnoturismoennusido@gmail.com&su=Consulta%20desde%20la%20web&body=Hola%2C%20quiero%20informaci%C3%B3n%20sobre..." target="_blank">Escríbenos en Gmail</a>
+                <p><a href="https://wa.me/3226152365?text=Hola,%20quiero%20información%20sobre...">Envianos un mensaje por WhatsApp</a></p>
+            </div>
+            <div class="footer-section links">
+                <h3>ACCESOS DIRECTOS</h3>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="ruta.html">Rutas</a></li>
+                    <li><a href="mapa.html">Mapa</a></li>
+                    <li><a href="contacto.html">Contáctanos</a></li>
+                    <li><a href="nosotros.html">Nosotros</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 RESGUARDO INDIGENA NUSIDO. TODOS LOS DERECHOS RESERVADOS.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

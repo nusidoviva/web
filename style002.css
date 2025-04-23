@@ -1,0 +1,291 @@
+body {
+  font-family: 'Playfair Display', serif;
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+}
+
+.header-hero {
+  background-image: url('img11.jpg');
+  background-size: cover;
+  background-position: center;
+  color: rgb(0, 0, 0);
+  position: relative;
+  z-index: 1;
+  padding: 60px 0;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.logo {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+nav {
+  background-color: transparent;  /* Fondo transparente */
+  padding: 20px;
+}
+
+.menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.menu > li {
+  position: relative;
+}
+
+.menu > li > a {
+  color: rgb(255, 255, 255);  /* Color de texto negro */
+  text-decoration: none;
+  padding: 15px;
+  display: block;
+  font-size: 18px;
+}
+
+/* Estilo para el submenú */
+.submenu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.submenu > li > a {
+  color: rgb(255, 255, 255);  /* Color de texto negro */
+  padding: 10px;
+  display: block;
+  font-size: 16px;
+}
+
+/* Efecto hover para cambiar color de texto */
+.menu > li > a:hover, .submenu > li > a:hover {
+  color: #e5be01;  /* Cambio de color al pasar el ratón */
+}
+
+/* Mostrar el submenú al pasar el ratón */
+.menu > li:hover .submenu {
+  display: block;
+}
+
+.user-actions a {
+  font-size: 24px;
+  color: #ffffff;
+}
+
+.hero {
+  text-align: center;
+  padding: 80px 20px;
+  color: rgb(82, 79, 79);
+}
+
+.hero h1 {
+  font-size: 3em;
+  margin-bottom: 20px;
+  color: #e5be01;
+}
+
+.hero p {
+  font-size: 1.1em;
+  margin-bottom: 30px;
+}
+
+.shop-now {
+  background-color: #e5be01;
+  color: #ffffff;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 25px;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+
+.quienes-somos-section {
+  background-color: #c47d5d;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box; /* Añadido para incluir el padding en el ancho */
+}
+
+.columna-imagen {
+  width: 50%;
+}
+
+.columna-imagen img {
+  width: 100%;
+  height: 200%;
+  height: auto;
+  display: block;
+}
+
+.columna-texto {
+  width: 50%;
+  padding: 20px;
+  box-sizing: border-box; /* Añadido para incluir el padding en el ancho */
+}
+
+.columna-texto h2 {
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.columna-texto p {
+  text-align: center;
+  font-size: 1em;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+.sarota {
+  background-color: #e5be01;
+  color: #ffffff;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 25px;
+  font-size: 1em;
+  cursor: pointer;
+  display: block; /* Asegura que el botón sea un bloque */
+  margin: 20px auto; /* Centra el botón horizontalmente */
+  text-align: center; /* Centra el texto dentro del botón (opcional) */
+}
+
+/*segunda seccion*/
+
+.close-section {
+  background-color: #c47d5d;
+  display: flex;
+  flex-direction: row-reverse; /* Cambia el orden de las columnas */
+  align-items: center;
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.columnados-imagen {
+  width: 50%;
+}
+
+.columnados-imagen img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.columna2-texto {
+  width: 50%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.columna2-texto h2 {
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.columna2-texto h4 {
+  text-align: center;
+  font-size: 1em;
+  margin-bottom: 20px;
+}
+
+.columna2-texto p {
+  text-align: center;
+  font-size: 1em;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+/*coloumnas dobles*/
+
+.contenedor-columnas {
+  display: flex; /* Convierte el contenedor en un flexbox */
+}
+
+.columna {
+  width: 50%; /* Cada columna ocupa el 50% del ancho del contenedor */
+  padding: 20px; /* Añade un poco de espacio alrededor del contenido */
+  box-sizing: border-box; /* Incluye el padding en el ancho total */
+}
+
+.columna-imagen img {
+  max-width: 100%; /* La imagen ocupa todo el ancho de la columna */
+  height: auto; /* Mantiene la proporción de la imagen */
+}
+
+.whatsapp-logo {
+  position: fixed;
+  bottom: 10px;
+  right: 20px;
+  z-index: 999;
+}
+
+.whatsapp-logo img {
+  width: 70px;
+  height: 70px;
+}
+
+footer {
+  background-color: #a86342;
+  padding: 40px 0;
+  color: #000000;
+  font-size: 14px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-around;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-section {
+  width: 30%;
+}
+
+.footer-section h3 {
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+
+.footer-section p, .footer-section ul {
+  line-height: 1.6;
+  color: #000000;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+  color: #000000;
+  text-decoration: none;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding-top: 20px;
+  border-top: 1px solid #ddd;
+  max-width: 1200px;
+  margin: 0 auto;
+  color: #000000;
+}
